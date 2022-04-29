@@ -10,8 +10,13 @@ public class Test {
 		//create the spring container
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				"com/springdemos/springcore/list/config.xml");
-		
+		//get bean
 		Hospital hosp = (Hospital) context.getBean("hospital");
+		
+		//type of list
+		System.out.println(hosp.getDepartments().getClass());
+		
+		//print bean
 		System.out.println(hosp);
 		
 	}
