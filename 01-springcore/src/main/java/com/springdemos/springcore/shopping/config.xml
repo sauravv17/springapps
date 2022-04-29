@@ -10,7 +10,7 @@
 
 	<bean name="item"
 		class="com.springdemos.springcore.shopping.Item">
-		<property name="item">
+		<property name="items">
 			<list>
 			<value>Grocery</value>
 			<value>Clothes</value>
@@ -22,7 +22,7 @@
 
 	<bean name="cart"
 		class="com.springdemos.springcore.shopping.Cart">
-		<property name="item">
+		<property name="Shopping">
 			<ref bean="item" />
 		</property>
 

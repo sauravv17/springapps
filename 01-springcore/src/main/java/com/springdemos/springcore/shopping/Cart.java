@@ -3,20 +3,21 @@ package com.springdemos.springcore.shopping;
 
 public class Cart {
 	
-	private Item item;
+	private Item Shopping;
 
-	public Item getItem() {
-		return item;
+	public Item getShopping() {
+		return Shopping;
 	}
 
-	public void setItem(Item item) {
-		this.item = item;
+	public void setShopping(Item shopping) {
+		Shopping = shopping;
 	}
 
 	@Override
 	public String toString() {
-		return "Cart [item=" + item + "]";
+		return "Cart [Shopping=" + Shopping + "]";
 	}
+
 	
 
 }
