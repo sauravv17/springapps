@@ -15,6 +15,12 @@ public class Test {
 		
 		// print the bean
 		System.out.println(presc);
+		System.out.println(presc.hashCode());
+		
+		//checking hash code eg: in beanscopes
+		Prescription presc2 = (Prescription) context.getBean("prescription");
+		System.out.println(presc2.hashCode());
+
 		
 	}
 
