@@ -1,4 +1,4 @@
-package com.springapps.springcore;
+package com.springdemos.springcore;
 
 /**
  * Hello world!
