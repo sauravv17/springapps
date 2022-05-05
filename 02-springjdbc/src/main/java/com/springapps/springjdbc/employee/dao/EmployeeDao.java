@@ -8,7 +8,7 @@ public interface EmployeeDao {
 	
 	int create (Employee employee);
 	
-	// update employee set firstname=? lastname=? where id =? 
+	// update employee set firstname=?, lastname=? where id =? 
 	int update(Employee employee);
 	
 	//delete from employee where id=?
