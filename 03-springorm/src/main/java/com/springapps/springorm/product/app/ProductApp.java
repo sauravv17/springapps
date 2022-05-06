@@ -17,7 +17,7 @@ public class ProductApp {
 		// updateProduct(productdao);
 		// deleteProduct(productdao);
 		//findProduct(productdao);
-		//findAllProduct(productdao);
+		findAllProduct(productdao);
 
 	}
 
