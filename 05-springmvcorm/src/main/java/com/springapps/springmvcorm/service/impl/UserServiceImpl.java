@@ -1,7 +1,11 @@
 package com.springapps.springmvcorm.service.impl;
 
+import java.util.Collections;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.springapps.springmvcorm.dao.UserDao;
 import com.springapps.springmvcorm.entity.User;
@@ -14,8 +18,16 @@ public class UserServiceImpl implements UserService{
 	private UserDao userDao;
 
 	@Override
+	@Transactional
 	public int save(User user) {
-		// TODO Auto-generated method stub
-		return 0;
+		return userDao.create(user);
+	}
+
+	@Override
+	public List<User> getUsers() {
+		
+		List<User> users = userDao.findUsers();
+		Collections.sort(users);
+		return users;
 	}
 }
